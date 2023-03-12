@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-vite-storybook/components": ["libs/components/src/index.ts"],
+      "@nx-vite-storybook/storybook-host": ["libs/storybook-host/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

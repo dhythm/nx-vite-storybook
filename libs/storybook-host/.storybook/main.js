@@ -4,8 +4,8 @@ const viteTsConfigPaths = require('vite-tsconfig-paths').default;
 module.exports = {
   core: { builder: '@storybook/builder-vite' },
   stories: [
-    '../../libs/**/*.stories.mdx',
-    '../../libs/**/*.stories.@(js|jsx|ts|tsx)',
+    '../../../libs/**/*.stories.mdx',
+    '../../../libs/**/*.stories.@(js|jsx|ts|tsx)',
   ],
   addons: ['@storybook/addon-essentials'],
   async viteFinal(config, { configType }) {

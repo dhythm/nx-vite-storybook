@@ -10,13 +10,14 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
+    "typeRoots": ["node_modules/@types", "./libs/components/src/lib/types"],
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-vite-storybook/components": ["libs/components/src/index.ts"],
-      "@nx-vite-storybook/storybook-host": ["libs/storybook-host/src/index.ts"]
+      "@/components": ["libs/components/src/index.ts"],
+      "@/storybook-host": ["libs/storybook-host/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

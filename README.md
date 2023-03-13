@@ -26,7 +26,7 @@ Install a component library.
 npm install @mui/material @emotion/react @emotion/styled
 ```
 
-Add a new workspace for components.
+Add a new workspace for components. Use `--importPath=[ALIAS_NAME]` if you want to rename alias.
 
 ```sh
 npx nx g @nrwl/react:lib components
@@ -34,6 +34,8 @@ npx nx g @nrwl/react:lib components
 ✔ What unit test runner should be used? · jest
 ✔ Which bundler would you like to use to build the library? Choose 'none' to skip build setup. · vite
 ```
+
+If you want to extend types, create `xxx.d.ts` files and refer them from typeRoots in `tsconfig.base.json`. In this workspace, using `createPalette.d.ts`, `createTheme.d.ts` and `styled.d.ts`.
 
 Set up for Storybook with Vite. https://nx.dev/recipes/storybook/one-storybook-for-all
 

@@ -16,8 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@/components": ["libs/components/src/index.ts"],
-      "@/storybook-host": ["libs/storybook-host/src/index.ts"]
+      "@nvs/components": ["libs/components/src/index.ts"],
+      "@nvs/something": ["libs/something/src/index.ts"],
+      "@nvs/storybook-host": ["libs/storybook-host/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

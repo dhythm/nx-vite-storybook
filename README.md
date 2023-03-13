@@ -26,7 +26,8 @@ Install a component library.
 npm install @mui/material @emotion/react @emotion/styled
 ```
 
-Add a new workspace for components. Use `--importPath=[ALIAS_NAME]` if you want to rename alias.
+Add a new workspace for components.
+Update `npmScope` in `nx.json` if you want to rename alias. Or another option is using `--importPath=[ALIAS_NAME]`.
 
 ```sh
 npx nx g @nrwl/react:lib components
